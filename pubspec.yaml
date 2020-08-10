@@ -1,0 +1,26 @@
+name: pokedex_api
+description: Pokedex API Wrapper
+version: 0.0.1
+homepage: https://github.com/ollerandres/pokedex-api
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.ollerandres.pokedex_api
+        pluginClass: PokedexApiPlugin
+      ios:
+        pluginClass: PokedexApiPlugin
